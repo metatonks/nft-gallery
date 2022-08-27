@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
   padding: 0;
@@ -23,4 +27,38 @@ a {
     color: white;
     background: black;
   }
+}
+
+.navigationButtons {
+  width: 80%;
+  height: 40px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  padding-top: 40px;
+}
+ 
+.navigationButtons a {
+  padding: 10px;
+  margin: 8px;
+  border-radius: 5px;
+  border: 1px solid red;
+  color: red;
+  cursor: pointer;
+}
+ 
+.navigationButtons a:hover {
+  color: white;
+  background-color: red;
+}
+ 
+.navigationActive a {
+  color: white;
+  background-color: red;
+}
+ 
+.navigationDisabled a {
+  color: grey;
+  background-color: grey;
 }
